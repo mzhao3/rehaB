@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-<div style="text-align: center; padding: 10vw 0;" class="background">
+<div style="text-align: center; padding: 5em 0;" class="background">
     <div class="title"><p>Uncommon Poems</p></div>
-
+    <p style="padding: 1em 7vw 2em 7vw">Click on the word you'd like to have featured in your haiku!</p>
     {% for item in content %}
     <a style="text-decoration: none; font-size: 200%; padding: 1em 0;" class="words" href = "/display?input={{item}}"> {{item}} </a>
     <br>
