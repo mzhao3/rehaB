@@ -35,7 +35,8 @@
 	background-size: contain;
 }
 .letter {
-    font-size: 500%;
+    font-size: calc(3em + 2vw);
+
 }
 .first {
     position: fixed;
@@ -87,6 +88,7 @@
     background-color: transparent;
     border: 3px solid #fff;
     text-align: center;
+    text-transform: uppercase;
 }
 .submit {
     outline: none;
@@ -99,9 +101,48 @@
     background-color: #fff;
     color: #8969AE;
 }
-.jar {
+.piggy {
     height: 25vh;
     position: fixed;
     top: calc(70vh + 0.5em);
     left: calc(50vw - 12.5vh);
+}
+.instructions {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 15vh;
+}
+.instructionsX {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 15vh;
+    visibility: hidden;
+}
+.instructions p {
+    font-size: 200%;
+    padding: 25px 100px;
+}
+.poem {
+    height: 40vh;
+    stroke: #fff;
+    fill: #fff;
+}
+.x {
+    fill: #fff;
+    stroke: #fff;
+    height: 5vh;
+    position: fixed;
+    right: 1vw;
+    top: 1vw;
+}
+.x:hover {
+    cursor: pointer;
 }
