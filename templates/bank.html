@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+div class="background">
+<div class="background">
+    <div class="title"><p>Uncommon Poems</p></div>
+
+    {% for item in content %}
+    <a href = "/display?story={{item}}"> {{item}} </a>
+    <br>
+    {% endfor %}
+</div>
+
+{% endblock %}
