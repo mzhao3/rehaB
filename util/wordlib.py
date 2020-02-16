@@ -1,7 +1,7 @@
 import pyphen
 import random
 import re
-import phyme
+
 
 dic = pyphen.Pyphen(lang='nl_NL')
 d={}
@@ -354,21 +354,36 @@ def get_line_sonnet(length, word, rhyme):
 
 def get_haiku(word):
     rannum = random.randint(0, 2)
+    output = []
     if(rannum == 0):
-        output = get_line_haiku(5, word) + "\n" + get_line_haiku(7, None) + "\n" + get_line_haiku(5, None)
+        output.append(get_line_haiku(5, word))
+        output.append(get_line_haiku(7, None))
+        output.append(get_line_haiku(5, None))
+
+
     elif(rannum == 1):
-        output = get_line_haiku(5, None) + "\n" + get_line_haiku(7, word) + "\n" + get_line_haiku(5, None)
+        output.append(get_line_haiku(5, None))
+        output.append(get_line_haiku(7, word))
+        output.append(get_line_haiku(5, None))
+
     elif(rannum == 2):
-        output = get_line_haiku(5, None) + "\n" + get_line_haiku(7, None) + "\n" + get_line_haiku(5, word)
+        output.append(get_line_haiku(5, None))
+        output.append(get_line_haiku(7, None))
+        output.append(get_line_haiku(5, word))
+
     print(output)
+    return output
 
+def get_dict():
+    return d
+'''
 def get_sonnet():
-    output = get_line(10) + "\n" + get_line(10) + "\n" + get_line(10) + "\n" + get_line(10) ++ "\n\n"
-    output2 = get_line(10) + "\n" + get_line(10) + "\n" + get_line(10) + "\n" + get_line(10) ++ "\n\n"
-    output3 = get_line(10) + "\n" + get_line(10) + "\n" + get_line(10) + "\n" + get_line(10) ++ "\n\n"
-    output4 = get_line(10) + "\n" + get_line(10)
+    output = get_line_sonnet(10) + "\n" + get_line_sonnet(10) + "\n" + get_line_sonnet(10) + "\n" + get_line_sonnet(10) ++ "\n\n"
+    output2 = get_line_sonnet(10) + "\n" + get_line_sonnet(10) + "\n" + get_line_sonnet(10) + "\n" + get_line_sonnet(10) ++ "\n\n"
+    output3 = get_line_sonnet(10) + "\n" + get_line_sonnet(10) + "\n" + get_line_sonnet(10) + "\n" + get_line_sonnet(10) ++ "\n\n"
+    output4 = get_line_sonnet(10) + "\n" + get_line_sonnet(10)
 
-
+'''
 #opens data file
 data = open("data.txt", "r")
 #for each line of data in the file
@@ -387,4 +402,4 @@ for line in data:
 # print(get_line(7))
 # print(get_line(5))
 get_haiku("across")
-get_sonnet()
+#get_sonnet()
