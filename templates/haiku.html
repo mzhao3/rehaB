@@ -5,14 +5,12 @@ div class="background">
     <div class="title"><p>Uncommon Poems</p></div>
 
     {% for item in content %}
-    <a href = "/display?input={{item}}"> {{item}} </a>
+     {{item}}
     <br>
     {% endfor %}
-    {% if message %}
-      <p> {{message}} </p>
-    {% else %}
 
-    {% endif %}
+    
+
 </div>
 
 {% endblock %}
