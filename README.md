@@ -1,7 +1,7 @@
 # rehaB
 Uncommon Hacks 2020! 
 
-Team Members: David Bukowski :confounded:, Jacky Lee :horse_racing:, Alex Sheen :runner:, Maggie Zhao :rice_ball:
+Team Members: David Bukowski :confounded:, Jackie Lee :horse_racing:, Alex Sheen :runner:, Maggie Zhao :rice_ball:
 
 ## How to Run
 
