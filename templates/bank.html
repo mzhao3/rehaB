@@ -1,11 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-div class="background">
-<div class="background">
+<div style="text-align: center; padding: 10vw 0;" class="background">
     <div class="title"><p>Uncommon Poems</p></div>
 
     {% for item in content %}
-    <a href = "/display?input={{item}}"> {{item}} </a>
+    <a style="text-decoration: none; font-size: 200%; padding: 1em 0;" class="words" href = "/display?input={{item}}"> {{item}} </a>
     <br>
     {% endfor %}
     {% if message %}
