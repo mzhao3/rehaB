@@ -3,4 +3,4 @@ itsdangerous==1.1.0
 Jinja2==2.11.1
 pyphen==0.9.5
 Werkzeug==1.0.0
-wheel==0.34.2
+wheel==0.38.1
